@@ -1,8 +1,8 @@
-<p id="notice" class="w3-panel"><%%= notice %></p>
+<p id="notice" class="w3-panel "><%%= notice %></p>
 
 <div class="w3-panel w3-aqua">
 
-<table class="w3-table-all">
+<table class="w3-table-all ">
 <thead>
   <tr>
     <th><h1><%= singular_table_name %></h1></th>
@@ -26,6 +26,8 @@
 <tr>
 <td>
 <%%= link_to 'Edit', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>) ,class:"w3-button w3-light-gray" %> |
+</td>
+<td>
 <%%= link_to 'Back', <%= index_helper %>_path , class:"w3-button w3-light-gray" %>
 </td>
 </tr>
